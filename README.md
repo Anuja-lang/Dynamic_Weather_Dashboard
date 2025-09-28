@@ -36,7 +36,7 @@ weather-dashboard/.
 ## ⚡ How to Run
 1. Clone this repo:
    ```bash
-   git clone https://github.com/bprashanth29/weather-dashboard.git
+   git clone https://github.com/Anuja-lang/Dynamic_Weather_Dashboard.git
    cd weather-dashboard
 2. Open index.html in your browser.
 
