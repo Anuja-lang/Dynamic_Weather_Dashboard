@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <h1>Dynamic Weather Dashboard</h1>
+        <p>Real-time, location-based weather • Open-Meteo API</p>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="search card" role="search">
+        <input id="city-input" type="search" placeholder="Search city (e.g. Mumbai, London)" aria-label="Search city" />
+        <button id="search-btn">Search</button>
+      </div>
+      <button id="loc-btn" class="btn-ghost">Use my location</button>
+    </div>
+
+    <main class="grid">
+      <section class="card">
+        <div id="current-container">
+          <div class="current">
+            <div class="icon" id="weather-icon"><span>☁️</span></div>
+            <div>
+              <div id="city-name" class="city">—</div>
+              <div id="weather-desc" class="meta">—</div>
+            </div>
+            <div class="temp" id="temp">—°C</div>
+          </div>
+
+          <div class="meta small" id="extra">Feels like — • Humidity —%</div>
+
+          <h3>7-day forecast</h3>
+          <div id="forecast" class="forecast"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Built with Open-Meteo API • Demo project
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
